@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Démarrage du build...'
-                bat 'node hello.js'
+                sh 'node hello.js'
             }
         }
     }
